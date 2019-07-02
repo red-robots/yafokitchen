@@ -1,0 +1,132 @@
+.orderBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	a {
+		display: block;
+		color: #FFF;
+		text-decoration: none;
+		background: $color-yellow-green;
+		font-family: $font-heading;
+		text-transform: uppercase;
+		padding: 8px 30px 8px 20px;
+		position: relative;
+		@include border-radius(0,0,0,10px);
+		span.txt {
+			font-size: 14px;
+			font-weight: 700;
+			padding-right: 5px;
+		}
+		i {
+			display: inline-block;
+			font-size: 12px;
+    		position: relative;
+		}
+		.yafo-chickpea {
+			margin-right:2px;
+			&.y2 {
+				@include transform( rotate(-180deg) );
+			}
+		}
+		.arrow-right {
+			position: relative;
+			right: -10px;
+			top: -1px;
+			font-size: 13px;
+			@include transition(all ease-out .3s);
+		}
+	}
+	a:hover {
+		background: $color-lime;
+		.arrow-right {
+			right: -16px;
+		}
+	}
+}
+.banner {
+	img {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+}
+body.home {
+	.site-content.wrapper {
+		max-width: 100%;
+		width: 100%;
+		padding: 0 0;
+	}
+}
+.mid-info-section {
+	padding-left: 40px;
+	padding-right: 40px;
+	background: $color-purple;
+	.inner-wrap {
+		background: $color__background-body;
+		@include tab {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include mid {
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+	}
+	.flexrow {
+		margin-left: -20px;
+		margin-right: -20px;
+		@include tab {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
+	}
+	.fbox {
+		width: 100%;
+		padding: 0 20px;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		@include tab {
+			width: 33.333%;
+			padding: 0 40px 20px 40px;
+			border-left: 1px solid $color__text-main;
+		}
+	}
+	.title {
+		margin: 0 0 2px;
+		font-family: $font-heading;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1.3;
+		text-transform: uppercase;
+		position: relative;
+		top: -5px;
+		span {
+			position: relative;
+			margin-left: 11px;
+			font-size: 21px;
+			top: 2px;
+		}
+	}
+	.fbox:nth-child(1) {
+		border-left: none;
+		.title {
+			color: $color-blue;
+		}
+	}
+	.fbox:nth-child(2) {
+		.title {
+			color: $color-purple;
+		}
+	}
+	.fbox:nth-child(3) {
+		.title {
+			color: $color-yellow-green;
+		}
+	}
+	.description {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.3;
+	}
+}

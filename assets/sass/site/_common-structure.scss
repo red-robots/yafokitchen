@@ -1,0 +1,123 @@
+div,h1,h2,h3,h4,h5,h6,p,li,a,span,strong {
+	overflow-wrap: normal;
+    word-wrap: normal;
+    -ms-word-break: normal;
+    word-break: normal;
+    word-break: normal;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    page-break-inside: avoid;
+}
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.sr-only {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.clear:before, .clear:after { content: " "; display: table; }
+.clear { *zoom: 1; }
+.clear {clear: both;}
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 20px;
+	position: relative;
+}
+a {
+	@include transition(all ease-out .3s);
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo {
+	@include tab {
+		width: 200px;
+	}
+	a,img {
+		display: block;
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+}
+
+.site-header {
+	.wrapper {
+		@include tab {
+			@include flexbox();
+			@include flexbox-wrap(wrap);
+			@include flexbox-direction(row);
+			@include flexbox-align-content(center);
+			@include flexbox-align-items(center);
+			margin-top: 40px;
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.site-footer {
+	width: 100%;
+	clear: both;
+}
+
+.yafo-chickpea {
+	display: inline-block;
+	font-family: 'chickpea';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+.yafo-chickpea:before {
+	content:'\0041';
+}
+
+.flexrow {
+	position: relative;
+	@include flexbox();
+	@include flexbox-wrap(wrap);
+	@include flexbox-direction(row);
+	.fbox {
+		box-sizing:border-box;
+		position: relative;
+	}
+}
