@@ -79,6 +79,9 @@ a {
 	}
 }
 
+.site {
+	position: relative;
+}
 .site-header {
 	.wrapper {
 		@include tab {
