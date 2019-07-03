@@ -49,7 +49,7 @@
 	            </div>
 	        <?php } ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="sr-only"><?php esc_html_e( 'MENU', 'acstarter' ); ?></span><span class="bar"></span></button>
+				<button id="toggleMenu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="sr-only"><?php esc_html_e( 'MENU', 'acstarter' ); ?></span><span class="bar"></span></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class'=>'nav-wrapper' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div><!-- wrapper -->

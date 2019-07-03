@@ -25,6 +25,7 @@ div,h1,h2,h3,h4,h5,h6,p,li,a,span,strong {
     position: absolute;
     width: 1px;
 }
+.text-center { text-align: center; }
 .clear:before, .clear:after { content: " "; display: table; }
 .clear { *zoom: 1; }
 .clear {clear: both;}
@@ -68,11 +69,25 @@ a {
 
 /* Logo */
 .logo {
+	width: 100%;
+	text-align: center;
+	padding-top: 23px;
 	@include tab {
+		padding-top: 0;
 		width: 200px;
+		text-align: left;
 	}
-	a,img {
-		display: block;
+	a {
+		display: inline-block;
+		width: 130px;
+		margin: 0 auto;
+		@include tab {
+			display: block;
+			width: 100%;
+			float: left;
+		}
+	}
+	img {
 		width: 100%;
 		height: auto;
 		float: left;
@@ -97,8 +112,81 @@ a {
 }
 
 .site-footer {
-	width: 100%;
-	clear: both;
+	background: $color-yellow-green;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	color: #FFF;
+	border-bottom: 40px solid $color-light-yellow;
+}
+.social-media {
+	text-align: center;
+	font-size: 16px;
+	line-height: 1;
+	color: #FFF;
+	.vertical-middle {
+		display: inline-block;
+		width: auto;
+	}
+	.sp {
+		display: inline-block;
+		padding: 0 15px;
+		border: 1px solid #FFF;
+		float: left;
+		height: 37px;
+		line-height: 40px;
+		font-weight: bold;
+		&.span1 {
+			border-right: none;
+		}
+		a {
+			display: inline-block;
+			font-size: 20px;
+			position: relative;
+			color: #FFF;
+			margin: 0 5px;
+			top: 1px;
+			&:hover {
+				opacity: 0.45;
+			}
+		}
+	}
+}
+.footer-text {
+	font-family: $font-heading;
+	font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+	padding: 15px 0 0;
+}
+
+.section-partners {
+	.flexrow {
+		@include flexbox-align-content(center);
+		@include flexbox-align-items(center);
+		@include flexbox-justify(center);
+	}
+	.info {
+		display: inline-block;
+		padding: 0 15px;
+		width: 30%;
+		text-align: center;
+		@include tab {
+			width: 20%;
+			padding: 0 20px;
+		}
+		@include mid {
+			width: auto;
+		}
+	}
+	.info img {
+		width: 100%;
+		height: auto;
+    	@include tab {
+    		width: auto;
+    		height: 90px;
+    	}
+	}
 }
 
 .yafo-chickpea {
