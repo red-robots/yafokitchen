@@ -1804,6 +1804,7 @@ html[xmlns] .flexslider .slides{display:block}
 .widget select{max-width:100%}
 div,h1,h2,h3,h4,h5,h6,p,li,a,span,strong{overflow-wrap:normal;word-wrap:normal;-ms-word-break:normal;word-break:normal;word-break:normal;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none;page-break-inside:avoid}
 *{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif;font-weight:600}
 .sr-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .text-center{text-align:center}
 .clear:before,.clear:after{content:" ";display:table}

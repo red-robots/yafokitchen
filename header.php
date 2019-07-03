@@ -30,13 +30,15 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="orderBtn">
-			<a href="#">
+			<?php if( $order_link = get_field('order_link','option') ) { ?>
+			<a href="<?php echo $order_link ?>">
 				<span class="txt">Order &amp; Delivery</span>
 				<i class="yafo-chickpea y1"></i>
 				<i class="yafo-chickpea y2"></i>
 				<i class="yafo-chickpea y3"></i>
 				<span class="arrow-right"><i class="fas fa-chevron-right"></i></span>
 			</a>
+			<?php } ?>
 		</div>
 		<div class="wrapper">
 			<?php if( get_custom_logo() ) { ?>
