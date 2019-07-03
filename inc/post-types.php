@@ -6,6 +6,14 @@ add_action('init', 'js_custom_init', 1);
 function js_custom_init() {
     $post_types = array(
         array(
+            'post_type' => 'location',
+            'menu_name' => 'Locations',
+            'plural'    => 'Locations',
+            'single'    => 'Location',
+            'supports'  => array('title','editor'),
+            'menu_icon' => 'dashicons-location',
+        ),
+        array(
             'post_type' => 'team',
             'menu_name' => 'Team',
             'plural'    => 'Team',
@@ -19,7 +27,7 @@ function js_custom_init() {
             'plural'    => 'Testimonials',
             'single'    => 'Testimonial',
             'supports'  => array('title','editor','thumbnail')
-        ),
+        )
     );
     
     if($post_types) {
