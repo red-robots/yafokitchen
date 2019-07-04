@@ -14,14 +14,6 @@ function js_custom_init() {
             'menu_icon' => 'dashicons-location',
         ),
         array(
-            'post_type' => 'team',
-            'menu_name' => 'Team',
-            'plural'    => 'Team',
-            'single'    => 'Team',
-            'menu_icon' => 'dashicons-groups',
-            'supports'  => array('title','editor','thumbnail')
-        ),
-        array(
             'post_type' => 'testimonial',
             'menu_name' => 'Testimonials',
             'plural'    => 'Testimonials',

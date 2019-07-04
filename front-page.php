@@ -26,7 +26,8 @@ get_header(); ?>
 			<?php
 			/* LOCATIONS */
 			$section_title = get_field('location_section_title');
-			$locations = get_field('locations');
+			//$locations = get_field('locations');
+			$locations = get_field('our_locations');
 			?>
 			<?php if ($locations) { ?>
 			<div class="section-locations clear">
@@ -37,24 +38,38 @@ get_header(); ?>
 					<?php if ($locations) { ?>
 					<div class="flexrow clear">
 						<?php foreach ($locations as $a) { 
-							$a_img = $a['loc_image']; 
-							$a_location = $a['location']; 
-							$a_address1 = $a['address_line_1']; 
-							$a_address2 = $a['address_line_2']; 
-							$a_phone_number = $a['phone_number']; 
+							$obj = $a['location_name'];
+							$a_img = $a['feat_image'];
+							$pid = $obj->ID;
+							$a_location = $obj->post_title;
+							$a_address = get_field('address',$pid);
+							$a_phone_number = get_field('phone',$pid);
+							$maplink = get_field('maplink',$pid);
+							// $a_img = $a['loc_image']; 
+							// $a_location = $a['location']; 
+							// $a_address1 = $a['address_line_1']; 
+							// $a_address2 = $a['address_line_2']; 
+							// $a_phone_number = $a['phone_number']; 
+							$link_before = '';
+							$link_after = '';
+							if($maplink){
+								$link_before = '<a class="maplink clear" title="Click to view Map" href="'.$maplink.'" target="_blank">';
+								$link_after = '</a>';
+							}
 							?>
 							<?php if ($a_location) { ?>
 							<div class="fbox">
 								<?php if ($a_img) { ?>
 								<div class="locimg"><img src="<?php echo $a_img['url']; ?>" alt="<?php echo $a_img['title']; ?>" /></div>	
 								<?php } ?>
+
+								<?php echo $link_before; ?>
 								<h3 class="name"><?php echo $a_location ?></h3>
-								<?php if ($a_address1) { ?>
-								<div class="address add1"><?php echo $a_address1 ?></div>	
+								<?php if ($a_address) { ?>
+								<address><?php echo $a_address ?></address>	
 								<?php } ?>
-								<?php if ($a_address2) { ?>
-								<div class="address add2"><?php echo $a_address2 ?></div>	
-								<?php } ?>
+								<?php echo $link_after; ?>
+
 								<?php if ($a_phone_number) { ?>
 								<div class="phonenum"><a href="tel:<?php echo format_phone_number($a_phone_number); ?>"><?php echo $a_phone_number ?></a></div>	
 								<?php } ?>

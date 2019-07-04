@@ -26,7 +26,7 @@ $partners = get_field('partners_list','option');
 					<span class="sp span1">FOLLOW US</span>
 					<span class="sp span2">
 						<?php foreach ($social_links as $k=>$e) { ?>
-							<a class="<?php echo $k ?>" href="<?php echo $e[0] ?>"><i class="<?php echo $e[1] ?>"></i><span class="sr-only"><?php echo $k ?></span></a>
+							<a class="<?php echo $k ?>" href="<?php echo $e[0] ?>" target="_blank"><i class="<?php echo $e[1] ?>"></i><span class="sr-only"><?php echo $k ?></span></a>
 						<?php } ?>
 					</span>
 				</div>
