@@ -16,6 +16,11 @@ foreach($social as $s) {
 
 $footer_text = get_field('partners_text','option');
 $partners = get_field('partners_list','option');
+
+$rewards_btn1_name = get_field('button_1_label','option');
+$rewards_btn1_link = get_field('button_1_link','option');
+$rewards_btn2_name = get_field('button_2_label','option');
+$rewards_btn2_link = get_field('button_2_link','option');
 ?>
 
 	<footer id="colophon" class="site-footer clear" role="contentinfo">
@@ -31,6 +36,19 @@ $partners = get_field('partners_list','option');
 					</span>
 				</div>
 			</div>	
+			<?php } ?>
+
+			<?php if ( ($rewards_btn1_name && $rewards_btn1_link) || ($rewards_btn2_name && $rewards_btn2_link) ) { ?>
+			<div class="rewards-buttons clear text-center">
+				<span class="rwbuttons">
+					<?php if ($rewards_btn1_name && $rewards_btn1_link) { ?>
+					<a href="<?php echo $rewards_btn1_link ?>" target="_blank" class="btn1"><?php echo $rewards_btn1_name ?></a>	
+					<?php } ?>
+					<?php if ($rewards_btn2_name && $rewards_btn2_link) { ?>
+					<a href="<?php echo $rewards_btn2_link ?>" target="_blank" class="btn2"><?php echo $rewards_btn2_name ?></a>	
+					<?php } ?>
+				</span>
+			</div>
 			<?php } ?>
 
 			<?php if ($footer_text) { ?>
