@@ -1902,7 +1902,6 @@ h1.page-title span:after,h1.entry-title span:after{content:"";display:block;widt
 .gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=submit]{-webkit-appearance:none;box-shadow:none;text-shadow:none;border-radius:6px;border:1px solid #57a522;color:#FFF;font-weight:bold;text-transform:uppercase;margin:0;padding:15px 30px 14px;font-family:"Montserrat",sans-serif;font-size:20px !important;background:#57a522;background:-webkit-linear-gradient(top,#57a522 0,#39842e 100%);background:linear-gradient(to bottom,#57a522 0,#39842e 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#57a522',endColorstr='#39842e',GradientType=0)}
 .gform_wrapper .gform_footer input.button:hover,.gform_wrapper .gform_footer input[type=submit]:hover{background:#39842e;background:-webkit-linear-gradient(top,#39842e 0,#57a522 100%);background:linear-gradient(to bottom,#39842e 0,#57a522 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#39842e',endColorstr='#57a522',GradientType=0)}
 .gform_wrapper .gform_footer{margin-top:0 !important}
-.default{min-height:30em;padding-bottom:50px}
 .page-link-list ul{margin:0;padding:0;list-style:none}
 .page-link-list li{position:relative;padding-left:12px;font-size:18px}
 .page-link-list li:before{content:"";display:block;width:4px;height:4px;background:#8cb83f;position:absolute;top:8px;left:0;border-radius:100%}
@@ -1918,7 +1917,8 @@ h1.page-title span:after,h1.entry-title span:after{content:"";display:block;widt
 @media(min-width:768px){.featImagediv{width:33%;float:right;margin-top:20px}
 }@media(min-width:900px){.featImagediv{width:28%}
 }.featImagediv img{width:100%;height:auto;float:left}
-.site-main.font2{font-family:"Montserrat",sans-serif;font-weight:400;line-height:1.7}
+.default{min-height:30em;padding-bottom:50px}
+.site-main.default{font-family:"Montserrat",sans-serif;font-weight:400;line-height:1.7}
 .site-main.default .entry-title{margin:30px 0 10px}
 .has-banner .site-main.default .entry-title{margin-top:50px}
 body.page-template-page-order .site-content.wrapper{max-width:100%;padding:0}

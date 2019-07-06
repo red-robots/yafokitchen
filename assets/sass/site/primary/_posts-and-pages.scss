@@ -292,10 +292,6 @@ h1.entry-title {
 .gform_wrapper .gform_footer {
 	margin-top: 0!important;
 }
-.default {
-	min-height: 30em;
-	padding-bottom: 50px;
-}
 .page-link-list {
 	ul {
 		margin: 0 0;
@@ -381,12 +377,14 @@ h1.entry-title {
 		float: left;
 	}
 }
-.site-main.font2 {
+.default {
+	min-height: 30em;
+	padding-bottom: 50px;
+}
+.site-main.default {
 	font-family: $font-heading;
 	font-weight: 400;
 	line-height: 1.7;
-}
-.site-main.default {
 	.entry-title {
 		margin: 30px 0 10px;
 	}
