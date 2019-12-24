@@ -1,6 +1,6 @@
 .orderBtn {
 	position: relative;
-	width: 60%;
+	width: 75%;
 	text-align: center;
 	margin: 0 auto;
 	@include tab {
@@ -575,7 +575,7 @@ body.page-template-page-menu {
 	}
 	.menu-type {
 		font-family: $font-heading;
-		padding: 20px;
+		padding: 30px;
 		width: 100%;
 		@include tab {
 			padding: 4%;
@@ -616,6 +616,12 @@ body.page-template-page-menu {
 		color: $color-lime;
 		text-align: center;
 		text-transform: uppercase;
+		@include tab {
+			font-size: 1.2em;
+		}
+		@include mid {
+			font-size: 1.5em;
+		}
 	}
 	a.mlink:hover {
 		.image {
