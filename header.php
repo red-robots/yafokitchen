@@ -32,6 +32,16 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+	<div style='display:none'>
+		<div id='inline_content' class="ajax popup">
+			<a href="https://yafokitchen.com/order-delivery/" target="_blank">
+				<img src="<?php bloginfo('template_url'); ?>/images/curbside.jpg">
+			</a>
+		</div>
+	</div>
+
+	
 <div id="page" class="site clear">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 

@@ -77,7 +77,11 @@ $rewards_btn2_link = get_field('button_2_link','option');
 		</div><!-- wrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<script type="text/javascript">
+	window.onload = function() {
+		$.colorbox({inline:true, href:".ajax"});
+	}
+</script>
 <?php wp_footer(); ?>
 
 </body>
