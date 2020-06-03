@@ -81,7 +81,7 @@ $rewards_btn2_link = get_field('button_2_link','option');
 <?php if(is_front_page()) { ?>
 <script type="text/javascript">
 	window.onload = function() {
-		$.colorbox({inline:true, href:".ajax"});
+		//$.colorbox({inline:true, href:".ajax"});
 	}
 </script>
 <?php } ?>
