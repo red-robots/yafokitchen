@@ -77,7 +77,30 @@ a {
 		/*width: 1200px;*/
 	}
 }
-
+.popup {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(#fff, 1);
+  a {
+  	color: #000;
+  	text-decoration: none;
+  }
+  .view-btn {
+	  width: auto;
+	  display: inline-block;
+	  margin: 20px auto;
+	  a {
+		  width: auto;
+		  display: block;
+		  background-color: #b60f0f;
+		  color: #fff;
+		  padding: 10px 20px;
+		  border-radius: 3px;
+		  text-decoration: none;
+		  color: #fff;
+		}
+	}
+}
 /* Logo */
 .logo {
 	width: 100%;

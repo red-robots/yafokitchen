@@ -85,7 +85,18 @@ $rewards_btn2_link = get_field('button_2_link','option');
 	}
 </script>
 <?php } ?>
-<?php wp_footer(); ?>
+<?php wp_footer(); 
+$active = get_field('turn_on_popup', 'option');
+if( $active[0] == 'turnon' && is_front_page() ) {
+?>
+<?php if(is_front_page()) { ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			// Popup
+			$.colorbox({inline:true, href:".ajax"});
+		});
+	</script>
+<?php }} ?>
 
 </body>
 </html>

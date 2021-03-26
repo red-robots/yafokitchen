@@ -1,65 +1,59 @@
+"use strict";
+
 /**
  *	Custom jQuery Scripts
  *	
  *	Developed by: Austin Crane	
  *	Designed by: Austin Crane
  */
-
 jQuery(document).ready(function ($) {
-	
+  /*
+  *
+  *	Responsive iFrames
+  *
+  ------------------------------------*/
+  var $all_oembed_videos = $("iframe[src*='youtube']");
+  $all_oembed_videos.each(function () {
+    $(this).removeAttr('height').removeAttr('width').wrap("<div class='embed-container'></div>");
+  });
+  /*
+  *
+  *	Flexslider
+  *
+  ------------------------------------*/
 
-	/*
-	*
-	*	Responsive iFrames
-	*
-	------------------------------------*/
-	var $all_oembed_videos = $("iframe[src*='youtube']");
-	
-	$all_oembed_videos.each(function() {
-	
-		$(this).removeAttr('height').removeAttr('width').wrap( "<div class='embed-container'></div>" );
- 	
- 	});
-	
-	/*
-	*
-	*	Flexslider
-	*
-	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
-	
-	/*
-	*
-	*	Colorbox
-	*
-	------------------------------------*/
-	$('a.gallery').colorbox({
-		rel:'gal',
-		width: '80%', 
-		height: '80%'
-	});
-	
+  $('.flexslider').flexslider({
+    animation: "slide"
+  }); // end register flexslider
 
-	/*
-	*
-	*	Equal Heights Divs
-	*
-	------------------------------------*/
-	$('.js-blocks').matchHeight();
+  /*
+  *
+  *	Colorbox
+  *
+  ------------------------------------*/
 
-	/*
-	*
-	*	Wow Animation
-	*
-	------------------------------------*/
-	new WOW().init();
+  $('a.gallery').colorbox({
+    rel: 'gal',
+    width: '80%',
+    height: '80%'
+  });
+  /*
+  *
+  *	Equal Heights Divs
+  *
+  ------------------------------------*/
 
-	$(document).on("click","#toggleMenu",function(){
-		$(this).toggleClass('open');
-		$('.main-navigation').toggleClass('open');
-		$('body').toggleClass('menu-open');
-	});
+  $('.js-blocks').matchHeight();
+  /*
+  *
+  *	Wow Animation
+  *
+  ------------------------------------*/
 
-});// END #####################################    END
+  new WOW().init();
+  $(document).on("click", "#toggleMenu", function () {
+    $(this).toggleClass('open');
+    $('.main-navigation').toggleClass('open');
+    $('body').toggleClass('menu-open');
+  });
+}); // END #####################################    END
