@@ -214,7 +214,7 @@ a {
 		text-align: center;
 		@include tab {
 			width: 20%;
-			padding: 0 20px;
+			padding: 0 15px;
 		}
 		@include mid {
 			width: auto;
@@ -225,11 +225,23 @@ a {
 		height: auto;
     	@include tab {
     		width: auto;
-    		height: 90px;
+    		height: 75px;
     	}
 	}
 }
+.siteby {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	font-size: 12px;
+	color: rgba(#fff, .5);
 
+	a {
+		text-decoration: none;
+		color: rgba(#fff, .7);
+	}
+}
 .yafo-chickpea {
 	display: inline-block;
 	font-family: 'chickpea';

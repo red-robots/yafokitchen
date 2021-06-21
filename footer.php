@@ -74,6 +74,8 @@ $rewards_btn2_link = get_field('button_2_link','option');
 			</div>
 			<?php } ?>
 
+			<div class="siteby">Designed by <a href="https://bellaworksweb.com" target="_blank">BW</a></div>
+
 		</div><!-- wrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
