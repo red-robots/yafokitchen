@@ -3,8 +3,10 @@
 	width: 75%;
 	text-align: center;
 	margin: 0 auto;
+	z-index: 10000000;
+	cursor: pointer;
 	@include tab {
-		width: auto;
+		width: 300px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -12,7 +14,7 @@
 		text-align: left;
 		margin: 0 0;
 	}
-	a {
+	
 		display: block;
 		color: #FFF;
 		text-decoration: none;
@@ -48,8 +50,8 @@
 			font-size: 13px;
 			@include transition(all ease-out .3s);
 		}
-	}
-	a:hover {
+	
+	&:hover {
 		background: $color-dark-green;
 		.arrow-right {
 			right: -16px;

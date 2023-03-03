@@ -56,4 +56,14 @@ jQuery(document).ready(function ($) {
     $('.main-navigation').toggleClass('open');
     $('body').toggleClass('menu-open');
   });
+  /* Order Online Dropdown */
+
+  $(document).on("click", ".orderBtn", function (e) {
+    e.preventDefault();
+    $(".order-options").toggleClass('open');
+  });
+  $(document).on("click", "#close-order", function (e) {
+    e.preventDefault();
+    $(".order-options").removeClass('open');
+  });
 }); // END #####################################    END

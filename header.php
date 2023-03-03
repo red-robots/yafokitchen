@@ -64,16 +64,46 @@ if( $active[0] == 'turnon' && is_front_page() ) { ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="orderBtn">
 			<?php if( $order_link = get_field('order_link','option') ) { ?>
-			<a href="<?php echo $order_link ?>">
+			<!-- <a href="<?php echo $order_link ?>"> -->
 				<span class="txt">Order &amp; Delivery</span>
 				<i class="yafo-chickpea y1"></i>
 				<i class="yafo-chickpea y2"></i>
 				<i class="yafo-chickpea y3"></i>
 				<span class="arrow-right"><i class="fas fa-chevron-right"></i></span>
-			</a>
+			<!-- </a> -->
+			<?php } ?>
+			<?php $order_options = get_field('order_options','option'); ?>
+			<?php if ($order_options) { 
+
+				
+				?>
+			<div class="order-options">
+				<?php foreach ($order_options as $o) { 
+					$o_link = $o['link'];
+					$o_logo = $o['logo'];  
+					$o_text = $o['text']; ?>
+					<?php //if ($o_link && $o_logo) { ?>
+						<div class="orderlink">
+							<a href="<?php echo $o_link ?>" target="_blank">
+								<?php if ($o_logo) { ?>
+									<img src="<?php echo $o_logo['url'] ?>" alt="$o_logo['title']">
+								<?php } ?>
+								<?php if ($o_text) { ?>
+								<span class="text"><?php echo $o_text ?></span>	
+								<?php } ?>
+							</a>
+						</div>
+					<?php //} ?>	
+				<?php } ?>
+				<!-- <div class="closediv clear"><a href="#" id="close-order">Close</a></div> -->
+			</div>
 			<?php } ?>
 		</div>
 		<div class="wrapper">
+			<?php 
+			// echo '<pre>';
+				// print_r($order_options);
+				// echo '</pre>'; ?>
 			<?php if( get_custom_logo() ) { ?>
 	            <div class="logo">
 	            	<?php the_custom_logo(); ?>
