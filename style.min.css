@@ -1240,6 +1240,7 @@ figure.yafo-hover img:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .order-options{position:relative;top:0;left:0;max-width:400px;width:95%;margin:0 auto;background:#FFF;-webkit-transition:all ease-in-out .4s;transition:all ease-in-out .4s;opacity:0;visibility:hidden;height:0;max-height:0;overflow:hidden;-webkit-border-bottom-right-radius:6px;-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;-moz-border-radius-bottomleft:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px}
 .order-options.open{opacity:1;visibility:visible;height:auto;max-height:100vh}
 .order-options:before{content:"";width:0;height:0;border-top:8px solid #8cb83f;border-left:11px solid transparent;border-right:11px solid transparent;position:absolute;top:0;left:27%}
+.order-options .orderlink{width:100%;position:relative}
 .order-options .orderlink a{-webkit-box-sizing:border-box;box-sizing:border-box;text-decoration:none;display:block;padding:20px;width:100%;float:left;color:#8cb83f;border-bottom:1px dashed rgba(0,0,0,0.2);display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .order-options .orderlink a span.text{display:inline-block;width:67%;float:right;text-align:left;font-size:15px;font-weight:500;line-height:1.3;padding-left:15px}
 .order-options .orderlink a span.text span{display:block;width:100%;margin-top:3px}
@@ -1383,7 +1384,8 @@ a{-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 .yafo-chickpea:before{content:'\0041'}
 .flexrow{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .flexrow .fbox{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative}
-.orderBtn{position:relative;width:75%;text-align:center;margin:0 auto;z-index:10000000;cursor:pointer;display:block;color:#FFF;text-decoration:none;background:#8cb83f;font-family:"Montserrat",sans-serif;text-transform:uppercase;padding:8px 30px 8px 20px;position:relative;border-top-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;border-top-right-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;border-bottom-left-radius:10px;-webkit-border-bottom-left-radius:10px;-moz-border-radius-bottomleft:10px;border-bottom-right-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-radius-bottomright:10px}
+.orderBtn{position:relative;width:75%;text-align:center;margin:0 auto;z-index:10;height:40px;cursor:pointer;display:block;color:#FFF;text-decoration:none;background:#8cb83f;font-family:"Montserrat",sans-serif;text-transform:uppercase;padding:8px 30px 8px 20px;position:relative;border-top-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;border-top-right-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;border-bottom-left-radius:10px;-webkit-border-bottom-left-radius:10px;-moz-border-radius-bottomleft:10px;border-bottom-right-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-radius-bottomright:10px}
+.orderBtn:before,.orderBtn:after{content:" ";display:table}
 .orderBtn span.txt{font-size:14px;font-weight:600;padding-right:5px}
 .orderBtn i{display:inline-block;font-size:12px;position:relative}
 .orderBtn .yafo-chickpea{margin-right:2px}

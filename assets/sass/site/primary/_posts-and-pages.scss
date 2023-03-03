@@ -3,8 +3,13 @@
 	width: 75%;
 	text-align: center;
 	margin: 0 auto;
-	z-index: 10000000;
+	z-index: 10;
+	height: 40px;
 	cursor: pointer;
+	&:before, &:after {
+		content: " ";
+    	display: table;
+	}
 	@include tab {
 		width: 300px;
 		position: absolute;

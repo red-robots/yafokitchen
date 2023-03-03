@@ -252,6 +252,7 @@ figure.yafo-hover {
 		}
 	}
 }
+
 .order-options {
 	position: relative;
 	top: 0px;
@@ -298,6 +299,10 @@ figure.yafo-hover {
 		@include mid {
 			left: 45px;
 		}
+	}
+	.orderlink {
+		width: 100%;
+		position: relative;
 	}
 	.orderlink a {
 		box-sizing: border-box;

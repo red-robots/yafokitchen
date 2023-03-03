@@ -3,7 +3,7 @@
  * Enqueue scripts and styles.
  */
 function acstarter_scripts() {
-	wp_enqueue_style( 'acstarter-style', get_stylesheet_uri(), array(), '2.46' );
+	wp_enqueue_style( 'acstarter-style', get_stylesheet_uri(), array(), '2.47' );
 
 	wp_deregister_script('jquery');
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2', true);
@@ -21,7 +21,7 @@ function acstarter_scripts() {
 	wp_enqueue_script( 
 			'acstarter-custom', 
 			get_template_directory_uri() . '/assets/js/custom.js', 
-			array(), '20120206', 
+			array(), '20120207', 
 			true 
 		);
 

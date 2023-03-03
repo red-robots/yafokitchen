@@ -77,6 +77,7 @@ if( $active[0] == 'turnon' && is_front_page() ) { ?>
 
 				
 				?>
+			<div class="topmenu">
 			<div class="order-options">
 				<?php foreach ($order_options as $o) { 
 					$o_link = $o['link'];
@@ -96,6 +97,7 @@ if( $active[0] == 'turnon' && is_front_page() ) { ?>
 					<?php //} ?>	
 				<?php } ?>
 				<!-- <div class="closediv clear"><a href="#" id="close-order">Close</a></div> -->
+			</div>
 			</div>
 			<?php } ?>
 		</div>

@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
   /* Order Online Dropdown */
 
   $(document).on("click", ".orderBtn", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $(".order-options").toggleClass('open');
   });
   $(document).on("click", "#close-order", function (e) {

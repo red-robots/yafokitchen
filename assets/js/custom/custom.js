@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
 
 	/* Order Online Dropdown */
 	$(document).on("click",".orderBtn",function(e){
-		e.preventDefault();
+		// e.preventDefault();
 		$(".order-options").toggleClass('open');
 	});
 
