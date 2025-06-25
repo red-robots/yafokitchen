@@ -173,6 +173,9 @@ body.home {
 	padding-bottom: 50px;
 	color: #FFF;
 	position: relative;
+	.flexrow {
+		justify-content: center;
+	}
 	h2 {
 		font-family: $font-heading;
 		font-size: 30px;
@@ -196,7 +199,7 @@ body.home {
 		width: 100%;
 		margin: 20px 0;
 		@include tab {
-			width: 33.333%;
+			width: 20%;
 			margin: 0 0;
 		}
 	}

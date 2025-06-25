@@ -47,6 +47,13 @@ h6 {font-size: 14px;}
 	padding: 0 20px;
 	position: relative;
 }
+.wrapper-locations {
+	max-width: 90%;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 20px;
+	position: relative;
+}
 a {
 	@include transition(all ease-out .3s);
 }

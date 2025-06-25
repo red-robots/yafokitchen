@@ -31,7 +31,7 @@ get_header(); ?>
 			?>
 			<?php if ($locations) { ?>
 			<div class="section-locations clear">
-				<div class="wrapper">
+				<div class="wrapper-locations">
 					<?php if ($section_title) { ?>
 						<h2 class="section-title text-center"><?php echo $section_title ?></h2>
 					<?php } ?>

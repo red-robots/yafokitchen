@@ -6,6 +6,7 @@
  *	Developed by: Austin Crane	
  *	Designed by: Austin Crane
  */
+
 jQuery(document).ready(function ($) {
   /*
   *
@@ -16,12 +17,12 @@ jQuery(document).ready(function ($) {
   $all_oembed_videos.each(function () {
     $(this).removeAttr('height').removeAttr('width').wrap("<div class='embed-container'></div>");
   });
+
   /*
   *
   *	Flexslider
   *
   ------------------------------------*/
-
   $('.flexslider').flexslider({
     animation: "slide"
   }); // end register flexslider
@@ -31,33 +32,32 @@ jQuery(document).ready(function ($) {
   *	Colorbox
   *
   ------------------------------------*/
-
   $('a.gallery').colorbox({
     rel: 'gal',
     width: '80%',
     height: '80%'
   });
+
   /*
   *
   *	Equal Heights Divs
   *
   ------------------------------------*/
-
   $('.js-blocks').matchHeight();
+
   /*
   *
   *	Wow Animation
   *
   ------------------------------------*/
-
   new WOW().init();
   $(document).on("click", "#toggleMenu", function () {
     $(this).toggleClass('open');
     $('.main-navigation').toggleClass('open');
     $('body').toggleClass('menu-open');
   });
-  /* Order Online Dropdown */
 
+  /* Order Online Dropdown */
   $(document).on("click", ".orderBtn", function (e) {
     // e.preventDefault();
     $(".order-options").toggleClass('open');
