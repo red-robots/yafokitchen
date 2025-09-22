@@ -19,15 +19,23 @@ get_header(); ?>
 								$menu_name = $m['name'];
 								$menu_image = $m['image'];
 								$menu_pdf = $m['menu_pdf'];
+								$link_or_file = $m['link_or_file'];
+								$link = $m['link'];
 								$placeholder = get_bloginfo("template_url") . "/images/square.png";
 								$has_image = ($menu_image) ? 'has-image':'no-image';
 								$imageBox = ($menu_image) ? ' style="background-image:url('.$menu_image['sizes']['medium_large'].')"' : '';
 								$openLink = '';
 								$closeLink = '';
-								if($menu_pdf) {
-									$openLink = '<a href="'.$menu_pdf['url'].'" target="_blank" class="mlink">';
+								if( $link_or_file == 'link' ) {
+									$openLink = '<a href="'.$link.'" target="_blank" class="mlink">';
 									$closeLink = '</a>';
+								} else {
+									if($menu_pdf) {
+										$openLink = '<a href="'.$menu_pdf['url'].'" target="_blank" class="mlink">';
+										$closeLink = '</a>';
+									}
 								}
+								
 								?>
 								<div class="menu-type <?php echo $has_image ?>">
 									<?php echo $openLink; ?>
