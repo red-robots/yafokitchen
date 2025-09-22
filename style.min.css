@@ -1549,7 +1549,7 @@ embed,iframe,object{max-width:100%}
 .locations-info .wrapper{padding-top:60px;padding-bottom:60px}
 .locations-info .fbox{width:50%}
 .locations-info .inside{padding:60px 30px}
-.menu-text-wrap .menu-type{padding:5%}
+.menu-text-wrap .menu-type{padding:5%;width:24.5%}
 .menu-text-wrap .name{font-size:1.5em}
 }@media screen and (min-width:1200px){}
 @media(min-width:1200px){.logo{width:230px}
